@@ -185,32 +185,37 @@ An interactive web app built with **Gradio Blocks**:
 
 ## Model Evaluation and Metrics
 
-### Issue Type Classification
+1. **Issue Type Classification**
 
-| Class                 | Precision | Recall | F1-Score | Support |
-| --------------------- | --------- | ------ | -------- | ------- |
-| **network\_outage**   | 0.81      | 0.79   | 0.80     | 120     |
-| **software\_bug**     | 0.76      | 0.83   | 0.79     | 130     |
-| **hardware\_failure** | 0.72      | 0.69   | 0.70     | 110     |
-| **user\_error**       | 0.82      | 0.78   | 0.80     | 115     |
-| **others**            | 0.75      | 0.68   | 0.71     | 95      |
-| **macro avg**         | 0.77      | 0.75   | 0.76     | 570     |
-| **weighted avg**      | 0.78      | 0.78   | 0.78     | 570     |
+              precision    recall  f1-score   support
 
-* **Macro F1**: 0.76 indicates balanced performance across all classes.
-* **Weighted F1**: 0.78, reflecting class distribution.
+           0       1.00      1.00      1.00        24
+           1       1.00      1.00      1.00        17
+           2       1.00      1.00      1.00        30
+           3       1.00      1.00      1.00        33
+           4       1.00      1.00      1.00        27
+           5       1.00      1.00      1.00        29
+           6       1.00      1.00      1.00        27
 
-### Urgency Level Classification
+    accuracy                           1.00       187
+   macro avg       1.00      1.00      1.00       187
+weighted avg       1.00      1.00      1.00       187
 
-| Class            | Precision | Recall | F1-Score | Support |
-| ---------------- | --------- | ------ | -------- | ------- |
-| **low**          | 0.84      | 0.87   | 0.85     | 160     |
-| **medium**       | 0.79      | 0.74   | 0.76     | 140     |
-| **high**         | 0.72      | 0.69   | 0.71     | 130     |
-| **macro avg**    | 0.78      | 0.77   | 0.77     | 430     |
-| **weighted avg** | 0.78      | 0.79   | 0.78     | 430     |
+The Issue Type classifier achieves perfect scores across all classes, indicating highly accurate discrimination between the seven issue categories.
 
-* **Note**: Medium urgency is slightly harder to distinguish from high urgency.
+2. **Urgency Level Classification**
+
+              precision    recall  f1-score   support
+
+           0       0.46      0.51      0.48        61
+           1       0.41      0.29      0.34        56
+           2       0.35      0.41      0.38        56
+
+    accuracy                           0.40       173
+   macro avg       0.40      0.40      0.40       173
+weighted avg       0.41      0.40      0.40       173
+
+The Urgency Level classifier shows moderate performance, with the highest recall in the low urgency class (0) and room for improvement in distinguishing medium and high urgency levels.
 
 ### Confusion Matrices
 
@@ -400,6 +405,4 @@ Prepared by **Manya Vishwakarma** (Online Python Developer Intern @ VirtuNexa).
 
 For questions or feedback, reach out via email: `manya.v@example.com`.
 
----
 
-*This document exceeds 3000 words, providing comprehensive details for reproducibility, understanding, and extension.*
