@@ -186,7 +186,7 @@ An interactive web app built with **Gradio Blocks**:
 ## Model Evaluation and Metrics
 
 1. **Issue Type Classification**
-
+```
               precision    recall  f1-score   support
 
            0       1.00      1.00      1.00        24
@@ -196,25 +196,23 @@ An interactive web app built with **Gradio Blocks**:
            4       1.00      1.00      1.00        27
            5       1.00      1.00      1.00        29
            6       1.00      1.00      1.00        27
-
     accuracy                           1.00       187
    macro avg       1.00      1.00      1.00       187
 weighted avg       1.00      1.00      1.00       187
-
+```
 The Issue Type classifier achieves perfect scores across all classes, indicating highly accurate discrimination between the seven issue categories.
 
 2. **Urgency Level Classification**
-
+```
               precision    recall  f1-score   support
 
            0       0.46      0.51      0.48        61
            1       0.41      0.29      0.34        56
            2       0.35      0.41      0.38        56
-
     accuracy                           0.40       173
    macro avg       0.40      0.40      0.40       173
 weighted avg       0.41      0.40      0.40       173
-
+```
 The Urgency Level classifier shows moderate performance, with the highest recall in the low urgency class (0) and room for improvement in distinguishing medium and high urgency levels.
 
 ### Confusion Matrices
