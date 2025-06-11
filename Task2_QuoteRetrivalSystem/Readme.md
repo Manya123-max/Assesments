@@ -1,8 +1,8 @@
-# Advanced Quote Search System
+# Advanced Quote Retrireval System
 
 ## Overview
 
-The Advanced Quote Search System is a semantic search engine built to retrieve inspirational, philosophical, and motivational quotes based on user-provided natural language queries. It incorporates modern deep learning techniques like sentence embeddings and vector similarity search, and provides a highly interactive interface using Gradio. Designed as a Retrieval-Augmented Generation (RAG)-style pipeline, this project supports single and multi-hop searches and includes analytics and export features.
+The Advanced Quote Retrireval System is a semantic search engine built to retrieve inspirational, philosophical, and motivational quotes based on user-provided natural language queries. It incorporates modern deep learning techniques like sentence embeddings and vector similarity search, and provides a highly interactive interface using Gradio. Designed as a Retrieval-Augmented Generation (RAG)-style pipeline, this project supports single and multi-hop searches and includes analytics and export features.
 
 This document provides an in-depth explanation of the system, from installation to design decisions, challenges faced, and final evaluation, structured for a comprehensive presentation in a GitHub repository.
 
